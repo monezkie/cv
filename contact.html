@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Contact Details</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h3>My Contact Details</h3>
+    <p>Dubai, United Arab Emirates</p>
+    <p>+ 971 56 123 4567</p>
+    <p>email@address.com</p>
+    <hr>
+    <!-- <form class="" action="index.html" method="post">  'action' attribute defines what would happen when 'submit' button is clicked -->
+    <form action="mailto:marc.mcatan@gmail.com" method="post" enctype="text/plain">
+        <!-- 
+       1. enctype = text/plain refers to the charset and eliminates symbols to the words added on the textarea
+       2. action here will send and open up an app for email. Generally on Mac users there will be a mail app installed but for windows follow the suggestion. For Google Chrome browser - click the 3 dots > Settings > Privacy and Security > on Search bar type 'Protocol Handler' > remove 'mail.gmail.com' from the list. Next go to gmail and allow the extension @Lesson 27 -->
+        <label>Your Name:</label>
+        <input type="text" name="yourName" value=""><br> <!-- 'name' identify the data added on each inputs -->
+        <label>Your Email:</label>
+        <input type="email" name="yourEmail"><br>
+        <label>Your Message:</label>
+        <textarea name="yourMessage" rows="10" cols="30"></textarea><br> <!-- rows determine the height and cols determine the width -->
+        <input type="submit" name="">
+    </form>
+
+</body>
+
+</html>
